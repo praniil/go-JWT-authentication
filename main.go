@@ -6,13 +6,15 @@ package main
 
 import (
 	"log"
+	"fmt"
 	"net/http"
-	"handlers/handlers.go"
+	"go-jwt-authentication/handlers"
 )
 
-func main(){
+func main() {
 	//handlers needed
-	http.HandleFunc("/signin", Signin)
+	fmt.Println("serving in :8080 server")
+	http.HandleFunc("/signin", handlers.Signin)
 	// http.HandleFunc("/welcome", Welcome)
 	// http.HandleFunc("/refresh", Refresh)
 	// http.HandleFunc("/logout", Logout)
