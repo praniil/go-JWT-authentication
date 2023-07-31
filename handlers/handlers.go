@@ -29,6 +29,12 @@ type Claims struct {
 	jwt.RegisteredClaims
 }
 
+
+//Creating a signup handler
+func Signup(w http.ResponseWriter, r *http.Request){
+	
+}
+
 // Creating a signin handler
 func Signin(w http.ResponseWriter, r *http.Request) {
 	var creds Credentials
